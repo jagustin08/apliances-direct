@@ -11,7 +11,10 @@
     --dark-blue: #081A44;
     --red: #C5000C;
 
-    --default-color: 
+    --default-color: var(--black-200);
+    --gutter-x: 32px;
+    --gutter-y: 0;
+
 }
 
 *, 
