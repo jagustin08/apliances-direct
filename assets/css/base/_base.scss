@@ -1,3 +1,27 @@
-:root {
-    
+:root { 
+    --font-family-gibson: "Gibson",
+    --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    --black: #000000;
+    --black-100: #18181B;
+    --black-200: #02050E;
+    --white: #ffffff;
+    --gray-100: #F4F4F5;
+    --gray-200: #E4E4E7;
+    --dark-gray: #71717A;
+    --dark-blue: #081A44;
+    --red: #C5000C;
+
+    --default-color: 
+}
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-gibson), var(--font-family-sans-serif);
+    color: var(--black-200);
 }
