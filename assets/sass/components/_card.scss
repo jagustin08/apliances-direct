@@ -1,0 +1,9 @@
+.card {
+    border: 1px solid var(--default-border-color);    
+    border-radius: var(--default-border-radius);
+    height: 100%;    
+}
+
+.card-body {
+    padding: var(--default-padding);
+}

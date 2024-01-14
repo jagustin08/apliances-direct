@@ -1,0 +1,32 @@
+.footer {
+    border-top: 2px solid var(--black-300);
+    padding-block: 20px;  
+    color: var(--dark-gray);
+
+    @include media('md') {
+        padding-block: 32px 24px;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    small {
+        display: inline-block;
+        max-width: 220px;
+    }
+
+    h5 {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        margin-bottom: 0;
+        display: grid;
+        row-gap: 8px;
+    }
+
+    a {
+        color: inherit;
+    }
+}

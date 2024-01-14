@@ -1,0 +1,21 @@
+.btn {
+    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: var(--default-border-radius);
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($color, $value);
+  }
+}

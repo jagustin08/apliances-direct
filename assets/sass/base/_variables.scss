@@ -1,0 +1,64 @@
+:root { 
+    --font-family-gibson: "Gibson";
+    --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --black: #000000;
+    --black-100: #02050e;
+    --black-200: #18181b;
+    --black-300: #1e1e1e;
+    --white: #ffffff;
+    --gray: #fafafa;
+    --gray-100: #f4f4f5;
+    --gray-200: #e4e4e7;
+    --gray-300: #252525; 
+    --dark-gray: #71717a;
+    --dark-blue: #081a44;
+    --red: #c5000c;
+
+    --default-color: var(--black-100);    
+    --default-bg-color: var(--white);    
+    --default-header-color: var(--black-200);
+    
+    --gutter-x: 32px;
+    --gutter-y: 0;
+
+    --default-border-radius: 8px;
+    --default-border-color: var(--gray-200);
+
+    --default-padding: 16px;
+    --default-padding-x: 16px;
+    --default-padding-y: 16px;
+}
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$gutters: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.25rem,
+  5: 1.5rem,
+  6: 3rem,
+);
+
+$theme-colors: (
+    "black": var(--black),
+    "black-100": var(--black-100),
+    "black-200": var(--black-200),
+    "black-300": var(--black-300),
+    "white": var(--white),
+    "gray": var(--gray),
+    "gray-100": var(--gray-100),
+    "gray-200": var(--gray-200),
+    "gray-300": var(--gray-300),
+    "dark-gray": var(--dark-gray),
+    "dark-blue": var(--dark-blue),
+    "red": var(--red),
+);

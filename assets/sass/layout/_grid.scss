@@ -23,3 +23,6 @@
 @include generate-gaps('gap', 'gap');
 @include generate-gaps('row-gap', 'row-gap');
 @include generate-gaps('column-gap', 'column-gap');
+
+@include generate-spacer('p');
+@include generate-spacer('m');

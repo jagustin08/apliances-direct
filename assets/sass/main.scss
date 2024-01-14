@@ -5,4 +5,15 @@
 @import "../sass/base/base";
 @import "../sass/base/typography";
 
+// layout
 @import "../sass/layout/grid";
+@import "../sass/layout/header";
+@import "../sass/layout/footer";
+
+// components
+@import "../sass/components/card";
+@import "../sass/components/alert";
+@import "../sass/components/buttons";
+
+// pages
+@import "../sass/pages/account_overview";

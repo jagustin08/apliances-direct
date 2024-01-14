@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 2px solid var(--black-300);
+    padding-block: 19px;
+
+    @include media('md') {
+        padding-block: 38px;
+    }
+}

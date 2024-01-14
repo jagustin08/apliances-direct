@@ -1,64 +1,97 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Appliances Direct</title>
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Appliances Direct</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
-
   <body>
-    <header>
+    <header class="header">
       <div class="container-fluid">
-        <a href="javascript:;">
+        <a href="index.html">
           <img src="assets/images/ad_logo.png" alt="Appliances Direct logo" class="img-fluid">
         </a>
       </div>
     </header>
 
-    <aside>
+    <div class="container-fluid main-container">
+      <div class="row g-5">
+        <aside class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h2">Hey, Name</h2>
+              <p>Credit balance to spend: £75.00</p>
+            </div>
+          </div>
+        </aside>
 
-    </aside>
-    
-    <main>
-      <div class="container-fluid">
-        <h1>Account overview</h1>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="h3">Orders</h3>
-                <p>You have <a href="javascript:;">2 orders</a> scheduled to be delivered <strong>Tuesday 9th August</strong></p>
-                <a href="javascript:;" class="btn btn-primary btn-dark-blue">View orders</a>
+        <main class="col-md-8 account-overview">
+          <h1 class="h1">Account overview</h1>
+
+          <div class="row gy-3 gx-4">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="h3">Orders</h3>
+                  <p>You have <em>2 orders</em> scheduled to be delivered <strong>Tuesday 9th August</strong></p>
+                  <a href="javascript:;" class="btn btn-dark-blue">View orders</a>
+                </div>
               </div>
             </div>
-          </div>  
-  
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="h3">Payment details</h3>
-                <p>You have <strong>3 linked cards</strong></p>
-                <a href="javascript:;" class="btn btn-primary btn-dark-blue">View details</a>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="h3">Payment details</h3>
+                  <p>You have <strong>3 linked cards</strong></p>
+                  <a href="javascript:;" class="btn btn-dark-blue">View details</a>
+                </div>
               </div>
             </div>
-          </div>  
-        </div>
+          </div>
+
+          <div class="alert alert-dismissible fade show" role="alert">
+            <h3 class="h3">Don't miss any deals</h3>
+            <p>Keep up-to-date with all our latest deals and offers via Email or SMS so you don't miss out!</p>
+
+            <form>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Email</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">SMS</label>
+                </div>
+              </div>
+            </form>
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <svg class="icon">
+                  <use xlink:href="assets/images/sprite.svg#times"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </main>
       </div>
-    </main>
+    </div>
 
-    <footer>
+    <footer class="footer">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row gy-3">
+          <div class="col-md-4">
             <img src="assets/images/bid_logo.png" alt="Buy It Direct Group logo" class="img-fluid">
             <small>Appliances Direct are part of the Buy It Direct Group; Reg. No. 04171412</small>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h5 class="h4">Opening times</h5>
             <ul class="list-unstyled">
               <li>Mon-Fri: 08:00 - 17:00</li>
@@ -67,14 +100,13 @@
             </ul>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h5 class="h4">Help and advice</h5>
             <a href="tel:03300412271">03300 412271</a>
           </div>
         </div>
       </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
