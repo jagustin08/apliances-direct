@@ -9,13 +9,11 @@
         opacity: .9;
     }
 
-    &:active {
-        transform: scale(0.97);
+    &.focus, &:focus {
+      box-shadow: none;
     }
 }
 
 @each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include button-variant($color, $value);
-  }
+  @include button-variant($color, $value);
 }

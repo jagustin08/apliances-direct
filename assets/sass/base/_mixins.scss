@@ -44,18 +44,18 @@
   }
 }
 
-@function shade-color($color, $weight) {
-  @return mix(black, $color, $weight);
-}
-
 @mixin button-variant($color, $value) {
-  background-color: $value;
-  border-color: $value;
-  color: var(--white);
+  $text-color: if(str-index($color, "gray") != null, var(--black-200), var(--white));
 
-  &:hover {
+  .btn-#{$color} {
+    color: $text-color;
     background-color: $value;
     border-color: $value;
-    color: var(--white);  
+
+    &:hover {
+      color: $text-color;
+      background-color: $value;
+      border-color: $value;
+    }
   }
 }

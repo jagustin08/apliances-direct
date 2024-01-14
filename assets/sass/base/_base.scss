@@ -7,12 +7,13 @@
 
 body {
     font-family: var(--font-family-gibson), var(--font-family-sans-serif);
-    color: var(--black-200);    
+    color: var(--default-color);    
 }
 
 .main-container {
-    background-color: var(--gray);
-    box-shadow: 0 0 0 100vmax var(--gray);
+    $bg-color: var(--gray);
+    background-color: $bg-color;
+    box-shadow: 0 0 0 100vmax $bg-color;
     clip-path: inset(0 -100vmax);
 
     padding-block: 20px 24px;
@@ -24,4 +25,18 @@ body {
 
 img {
     display: block;
+}
+
+
+
+[data-toggle="tooltip"] {
+    display: inline-block;
+    vertical-align: text-bottom;    
+    cursor: pointer;
+
+    .icon {
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+    }
 }

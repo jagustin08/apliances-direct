@@ -1,7 +1,6 @@
 .footer {
     border-top: 2px solid var(--black-300);
     padding-block: 20px;  
-    color: var(--dark-gray);
 
     @include media('md') {
         padding-block: 32px 24px;

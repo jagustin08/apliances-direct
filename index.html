@@ -20,66 +20,169 @@
 
     <div class="container-fluid main-container">
       <div class="row g-5">
-        <aside class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="h2">Hey, Name</h2>
-              <p>Credit balance to spend: £75.00</p>
-            </div>
-          </div>
-        </aside>
+        <div class="col-md-4">
+          <aside class="sidebar">
+            <h2 class="h2">Hey, Name</h2>
+            <p>Credit balance to spend: £75.00 
+              <i data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                <svg class="icon tooltip-icon">
+                  <use xlink:href="assets/images/sprite.svg#circle-info-solid"></use>
+                </svg>                
+              </i>
+            </p>
 
-        <main class="col-md-8 account-overview">
-          <h1 class="h1">Account overview</h1>
-
-          <div class="row gy-3 gx-4">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="h3">Orders</h3>
-                  <p>You have <em>2 orders</em> scheduled to be delivered <strong>Tuesday 9th August</strong></p>
-                  <a href="javascript:;" class="btn btn-dark-blue">View orders</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="h3">Payment details</h3>
-                  <p>You have <strong>3 linked cards</strong></p>
-                  <a href="javascript:;" class="btn btn-dark-blue">View details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="alert alert-dismissible fade show" role="alert">
-            <h3 class="h3">Don't miss any deals</h3>
-            <p>Keep up-to-date with all our latest deals and offers via Email or SMS so you don't miss out!</p>
-
-            <form>
-              <div class="form-group">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Email</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2">SMS</label>
-                </div>
-              </div>
-            </form>
-
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">
-                <svg class="icon">
-                  <use xlink:href="assets/images/sprite.svg#times"></use>
-                </svg>
-              </span>
+            <button class="btn btn-gray-100 collapse-toggler" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <svg class="icon bars-solid">
+                <use xlink:href="assets/images/sprite.svg#bars-solid"></use>
+              </svg>                
+              Menu
+              <svg class="icon chevron-down">
+                <use xlink:href="assets/images/sprite.svg#chevron-down-solid"></use>
+              </svg>              
             </button>
-          </div>
-        </main>
+
+            <nav class="collapse" id="collapseExample">
+              <ul class="nav">
+                <li class="nav-item active">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#house-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#house-solid"></use>
+                    </svg>                    
+                    Account Overview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                  <svg class="icon bars-solid">
+                    <use xlink:href="assets/images/sprite.svg#star-regular"></use>
+                    <use xlink:href="assets/images/sprite.svg#star-solid"></use>
+                  </svg>                  
+                  Membership
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#box-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#box-solid"></use>
+                    </svg>                    
+                    Order History
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#file-lines-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#file-lines-solid"></use>
+                    </svg>                    
+                    Account statement
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#user-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#user-solid"></use>
+                    </svg>                    
+                    My details
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#credit-card-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#credit-card-solid"></use>
+                    </svg>                    
+                    Payment methods
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                    <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#rectangle-ad-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#rectangle-ad-solid"></use>
+                    </svg>                    
+                    Account settings
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:;" class="nav-link">
+                  <svg class="icon bars-solid">
+                      <use xlink:href="assets/images/sprite.svg#comment-dots-regular"></use>
+                      <use xlink:href="assets/images/sprite.svg#comment-dots-solid"></use>
+                  </svg>                  
+                  Feedback
+                  </a>
+                </li>
+              </ul>
+
+              <a href="javascript:;" class="btn btn-link" id="btnSignout">
+                <svg class="icon bars-solid">
+                    <use xlink:href="assets/images/sprite.svg#arrow-right-from-bracket-solid"></use>
+                </svg>                
+                Sign out
+              </a>
+            </nav>                     
+          </aside>
+        </div>
+
+        <div class="col-md-8">
+          <main class="account-overview">
+            <h1 class="h1">Account overview</h1>
+  
+            <div class="row gy-3 gx-4">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="h3">Orders</h3>
+                    <p>You have <a href="javascript:;">2 orders</a> scheduled to be delivered <strong>Tuesday 9th August</strong></p>
+                    <a href="javascript:;" class="btn btn-dark-blue">View orders</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="h3">Payment details</h3>
+                    <p>You have <strong>3 linked cards</strong></p>
+                    <a href="javascript:;" class="btn btn-dark-blue">View details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="alert alert-dismissible fade show" role="alert">
+              <h3 class="h3">Don't miss any deals</h3>
+              <p>Keep up-to-date with all our latest deals and offers via Email or SMS so you don't miss out!</p>
+  
+              <form>
+                <div class="form-group">
+                  <legend class="h4">How can we get in touch with you?</legend>
+  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="emailCheckbox" value="email" name="contact">
+                    <label class="form-check-label" for="emailCheckbox">Email</label>
+                  </div>
+  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="smsCheckbox" value="sms" name="contact">
+                    <label class="form-check-label" for="smsCheckbox">SMS</label>
+                  </div>
+                </div>
+              </form>
+  
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <svg class="icon">
+                    <use xlink:href="assets/images/sprite.svg#times"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
 

@@ -10,6 +10,8 @@
     }
 
     .card {
+        height: 100%;
+        
         .card-body {
             display: flex;
             flex-direction: column;
@@ -20,7 +22,8 @@
             margin-bottom: 24px;
         }
 
-        em {
+        a:not(.btn) {
+            color: inherit;
             font-style: normal;
             text-decoration: underline;
             font-weight: 600;
