@@ -33,6 +33,7 @@
   --default-padding: 16px;
   --default-padding-x: 16px;
   --default-padding-y: 16px;
+  --container-width: 1232px;
 }
 
 *,
@@ -114,7 +115,7 @@ strong {
 }
 
 .container-fluid {
-  max-width: 1232px;
+  max-width: var(--container-width);
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -529,6 +530,20 @@ strong {
   color: inherit;
 }
 
+@media (min-width: 768px) {
+  .main-col {
+    max-width: calc(var(--container-width) - 306px);
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-col {
+    max-width: 306px;
+    flex: 1;
+  }
+}
+
 .sidebar {
   background-color: var(--white);
   border: 1px solid var(--default-border-color);
@@ -577,6 +592,7 @@ strong {
   color: inherit;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
+  padding: 12px 16px;
 }
 .sidebar .nav .nav-link .icon {
   fill: var(--default-color);
@@ -624,6 +640,7 @@ strong {
   font-size: inherit;
   color: var(--red);
   text-decoration: none;
+  padding: 12px 16px;
 }
 .sidebar #btnSignout:hover {
   background-color: var(--gray-200);
@@ -837,4 +854,4 @@ strong {
 }
 .account-overview .alert {
   margin-block: 16px 0;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */

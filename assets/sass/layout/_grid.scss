@@ -1,5 +1,5 @@
 .container-fluid {
-    max-width: 1232px;
+    max-width: var(--container-width);
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {

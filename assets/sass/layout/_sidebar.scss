@@ -1,3 +1,10 @@
+.sidebar-col {
+    @include media('md') {
+        max-width: 306px;     
+        flex: 1;   
+    }
+}
+
 .sidebar {
     background-color: var(--white);
     border: 1px solid var(--default-border-color);
@@ -53,6 +60,7 @@
             color: inherit;
             cursor: pointer;
             transition: all .15s ease-in-out;
+            padding: 12px 16px;
 
             .icon {
                 fill: var(--default-color);
@@ -117,6 +125,7 @@
         font-size: inherit;
         color: var(--red);
         text-decoration: none;
+        padding: 12px 16px;
 
         &:hover {
             background-color: var(--gray-200);

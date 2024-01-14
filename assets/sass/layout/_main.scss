@@ -1,0 +1,6 @@
+.main-col {
+    @include media('md') {
+        max-width: calc(var(--container-width) - 306px);
+        flex: 1;
+    }
+}
