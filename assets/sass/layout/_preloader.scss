@@ -7,7 +7,6 @@
     z-index: 1080;
 
     .preloader {
-        // background-color: yellow;
         width: min(calc(100% - 32px), 300px);
         height: 40px;
         margin: auto;
@@ -16,23 +15,12 @@
     }
 
     .logo-container {
-        width: 50%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
         position: absolute;
-        // background-color: blue;
         left: 0;
-        animation: reveal 1.8s alternate infinite;
-    }
-
-    @keyframes reveal {
-        0%, 50% {
-            width: 0%;
-        }
-
-        100% {
-            width: 100%;
-        }
+        animation: reveal 3s alternate infinite;
     }
 
     #ad-text-logo {
@@ -44,8 +32,19 @@
         left: 0;
     }
 
+    @keyframes reveal {
+        0%, 50% {
+            width: 0;
+        }
+        
+        100% {
+            width: 100%;
+        }
+    }
+
+
     #ad-arrow-logo {
-        background: url('../images/ad_arrow_logo.svg') no-repeat center;
+        background: rgba(255, 255, 255, 0.4) url('../images/ad_arrow_logo.svg') no-repeat center;
         width: 39px;
         height: 39px;
 
@@ -56,7 +55,7 @@
         transform: translate(-50%, -50%) scale(0);
         z-index: 1;
 
-        animation: panning 1.8s alternate infinite;
+        animation: panning 3s alternate infinite;
     }
 
     @keyframes panning {
@@ -70,12 +69,12 @@
             left: 50%;
         }
 
-        50%, 75% {
+        50% {
             transform: translate(0%, -50%) scale(1);
             left: 0%;
         }
 
-        75%, 100% {
+        100% {
             transform: translate(0%, -50%) scale(1);
             left: calc(100% - 39px);
         }        
