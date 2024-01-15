@@ -116,7 +116,6 @@ strong {
 .preloader-container .preloader {
   width: 300px;
   height: 40px;
-  transform: scale(1.1);
 }
 .preloader-container .preloader::before {
   content: "";
