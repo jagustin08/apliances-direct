@@ -59,3 +59,10 @@
     }
   }
 }
+
+@mixin badge-variant($color, $value) {
+  .badge-#{$color} {
+    color: var(--white);
+    background-color: $value;
+  }
+}

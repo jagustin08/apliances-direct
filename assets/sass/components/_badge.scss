@@ -1,0 +1,9 @@
+.badge {
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+@each $color, $value in $theme-colors {
+  @include badge-variant($color, $value);
+}
