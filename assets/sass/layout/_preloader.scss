@@ -31,7 +31,7 @@
             transform: translate(-50%, -50%) scale(0);
             z-index: 1;
 
-            animation: arrow 1.8s alternate 2 forwards; 
+            animation: arrow 1.8s alternate 2 forwards 1.5s; 
 
         }
     }
@@ -41,12 +41,12 @@
         height: 40px;
         position: absolute;
         left: 0;
-        animation: text 1.8s alternate 2 forwards;
+        animation: text 1.8s alternate 2 forwards  1.5s;
         overflow: hidden;
     }
 
     img {
-        width: calc(300px - 40px);
+        width: 260px;
         height: 40px;
         position: absolute;
         top: 0;
@@ -90,12 +90,10 @@
     }
     
     75% {
-        width: calc(300px - 40px);
-        transform: translateX(0);
+        width: 260px;
     }
 
     100% {
-        width: calc(300px - 40px);
-        transform: translateX(0);
+        width: 260px;
     }
 }

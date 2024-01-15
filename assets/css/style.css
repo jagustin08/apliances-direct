@@ -135,14 +135,14 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1;
-  animation: arrow 1.8s alternate 2 forwards;
+  animation: arrow 1.8s alternate 2 forwards 1.5s;
 }
 .preloader-container .logo-container {
   width: 0;
   height: 40px;
   position: absolute;
   left: 0;
-  animation: text 1.8s alternate 2 forwards;
+  animation: text 1.8s alternate 2 forwards 1.5s;
   overflow: hidden;
 }
 .preloader-container img {
@@ -184,11 +184,9 @@ strong {
   }
   75% {
     width: 260px;
-    transform: translateX(0);
   }
   100% {
     width: 260px;
-    transform: translateX(0);
   }
 }
 .container-fluid {
