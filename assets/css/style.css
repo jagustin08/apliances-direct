@@ -125,11 +125,12 @@ strong {
   height: 39px;
   position: absolute;
   top: 50%;
-  animation: arrow 1.5s alternate 2 forwards;
+  animation: arrow 1.8s alternate 2 forwards;
 }
 .preloader-container img {
   width: 100%;
-  animation: text 1.5s alternate 2 forwards;
+  animation: text 1.8s alternate 2 forwards;
+  margin-left: -30px;
 }
 
 @keyframes text {
@@ -144,6 +145,7 @@ strong {
   50% {
     -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    transform: translateX(30px);
   }
   75% {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -165,7 +167,7 @@ strong {
   }
   75%, 100% {
     transform: translate(0%, -50%) scale(1);
-    left: 100%;
+    left: calc(100% - 30px);
   }
 }
 .container-fluid {

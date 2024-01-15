@@ -29,5 +29,5 @@ $(document).ready(function() {
     setTimeout(function() {
         $('.preloader-container').fadeOut('slow');
         $('body').css({ overflow: 'auto', });
-    }, 3000);
+    }, 3600);
 });
