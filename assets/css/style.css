@@ -117,6 +117,11 @@ strong {
   width: 300px;
   height: 40px;
 }
+@media (min-width: 768px) {
+  .preloader-container .preloader {
+    transform: scale(1.1);
+  }
+}
 .preloader-container .preloader::before {
   content: "";
   background: url("../images/ad_arrow_logo.svg") no-repeat center;
