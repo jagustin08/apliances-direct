@@ -24,5 +24,12 @@ $(document).ready(function() {
         },
     });    
 
-    
+
+    $('.logo-container, #ad-arrow-logo').css(
+        '-webkit-animation-play-state', 'running'
+    );
+
+    $('.logo-container, #ad-arrow-logo').on('animationend', function() {
+        $('.preloader-container').fadeOut('slow');
+    });
 });
