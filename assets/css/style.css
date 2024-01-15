@@ -140,7 +140,6 @@ strong {
 .preloader-container .logo-container {
   width: 0;
   height: 40px;
-  overflow: hidden;
   position: absolute;
   left: 0;
   animation: text 1.8s alternate 2 forwards;
