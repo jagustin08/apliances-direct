@@ -135,7 +135,7 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1;
-  animation: arrow 1.8s alternate infinite forwards;
+  animation: arrow 1.8s alternate 2 forwards;
 }
 .preloader-container .logo-container {
   width: 0;
@@ -143,7 +143,7 @@ strong {
   overflow: hidden;
   position: absolute;
   left: 0;
-  animation: text 1.8s alternate infinite forwards;
+  animation: text 1.8s alternate 2 forwards;
 }
 .preloader-container img {
   width: 260px;

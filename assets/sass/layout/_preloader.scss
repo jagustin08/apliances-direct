@@ -31,7 +31,7 @@
             transform: translate(-50%, -50%) scale(0);
             z-index: 1;
 
-            animation: arrow 1.8s alternate infinite forwards; 
+            animation: arrow 1.8s alternate 2 forwards; 
 
         }
     }
@@ -42,7 +42,7 @@
         overflow: hidden;
         position: absolute;
         left: 0;
-        animation: text 1.8s alternate infinite forwards;
+        animation: text 1.8s alternate 2 forwards;
     }
 
     img {
