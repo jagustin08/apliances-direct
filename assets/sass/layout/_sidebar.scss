@@ -11,6 +11,15 @@
     border-radius: var(--default-border-radius);
     padding: var(--default-padding);
 
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
     .collapse:not(.show) {
         @include media('md') {
             display: block;
@@ -41,6 +50,7 @@
         align-items: center;
         height: 48px;
         border-radius: var(--default-border-radius);
+        transition: all .15s;
 
         .icon {
             fill: var(--dark-gray);
@@ -50,10 +60,15 @@
 
         use {
             opacity: 0;
+            transition: all .15s;
         }
 
         use:first-child {
             opacity: 1;
+        }
+
+        &:hover {
+            gap: 12px;
         }
     }
 
@@ -96,6 +111,7 @@
 
     .active .nav-link {
         @extend %active-state;
+        pointer-events: none;
     }
 
     #btnSignout {
@@ -110,5 +126,9 @@
         .icon {
             fill: var(--red);
         }
+    }
+
+    .badge {
+        margin-left: auto;
     }
 }

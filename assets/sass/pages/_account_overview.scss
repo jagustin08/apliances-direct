@@ -37,4 +37,29 @@
     .alert {
         margin-block: 16px 0;
     }
+
+    .form-group {
+        margin-bottom: 0;
+    }        
+
+    .custom-control-label {
+        cursor: pointer;
+    }
+
+    .custom-control-input {
+
+        &:checked~.custom-control-label::before {
+            border-color: var(--dark-blue);
+            background-color: var(--dark-blue);
+        }
+    
+        &:focus:not(:checked)~.custom-control-label::before {
+            border-color: var(--dark-blue);
+        }
+    
+        &:focus~.custom-control-label::before {
+            box-shadow: 0 0 0 0.2rem rgba(8,26,68,0.25);
+        }
+    }
+
 }

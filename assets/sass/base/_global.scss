@@ -26,17 +26,3 @@ body {
 img {
     display: block;
 }
-
-
-
-[data-toggle="tooltip"] {
-    display: inline-block;
-    vertical-align: text-bottom;    
-    cursor: pointer;
-
-    .icon {
-        width: 12px;
-        height: 12px;
-        vertical-align: middle;
-    }
-}

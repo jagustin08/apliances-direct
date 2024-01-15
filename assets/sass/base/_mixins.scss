@@ -61,8 +61,10 @@
 }
 
 @mixin badge-variant($color, $value) {
+  $text-color: if(str-index($color, "gray") != null, var(--black-200), var(--white));
+
   .badge-#{$color} {
-    color: var(--white);
+    color: $text-color;
     background-color: $value;
   }
 }

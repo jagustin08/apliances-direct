@@ -1,0 +1,60 @@
+//atomiks.github.io/tippyjs/v6/getting-started/
+// https://tippyjs.bootcss.com/
+
+.tippy-box[data-animation="shift-away"][data-state="hidden"] {
+    opacity: 0;
+}
+.tippy-box[data-animation="shift-away"][data-state="hidden"][data-placement^="top"] {
+    transform: translateY(10px);
+}
+.tippy-box[data-animation="shift-away"][data-state="hidden"][data-placement^="bottom"] {
+    transform: translateY(-10px);
+}
+.tippy-box[data-animation="shift-away"][data-state="hidden"][data-placement^="left"] {
+    transform: translateX(10px);
+}
+.tippy-box[data-animation="shift-away"][data-state="hidden"][data-placement^="right"] {
+    transform: translateX(-10px);
+}
+
+.tippy-box {
+    font-size: 12px;
+}
+
+.tippy-content {
+    padding: 16px;
+}
+
+.tippy-box[data-theme~='white'] {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.15));
+    background-color: var(--white);
+    color: inherit;
+}
+
+.tippy-box[data-theme~='white'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: var(--white);
+}
+.tippy-box[data-theme~='white'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: var(--white);
+}
+.tippy-box[data-theme~='white'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: var(--white);
+}
+.tippy-box[data-theme~='white'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: var(--white);;
+}
+
+.tooltip-toggle {
+    cursor: pointer;
+    vertical-align: text-bottom;
+    
+    .icon {
+        fill: var(--default-color);
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.tooltip-content {
+    display: none;
+}
