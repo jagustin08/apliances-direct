@@ -135,11 +135,22 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 1;
-  animation: arrow 1.8s alternate 2 forwards;
+  animation: arrow 1.8s alternate infinite forwards;
+}
+.preloader-container .logo-container {
+  width: 0;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  animation: text 1.8s alternate infinite forwards;
 }
 .preloader-container img {
-  width: calc(100% - 40px);
-  animation: text 1.8s alternate 2 forwards;
+  width: 260px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @keyframes arrow {
@@ -162,21 +173,20 @@ strong {
 }
 @keyframes text {
   0% {
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    width: 0;
   }
   25% {
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    width: 0;
   }
   50% {
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    width: 0;
     transform: translateX(30px);
   }
   75% {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 260px;
+  }
+  100% {
+    width: 260px;
   }
 }
 .container-fluid {
