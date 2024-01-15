@@ -143,6 +143,7 @@ strong {
   position: absolute;
   left: 0;
   animation: text 1.8s alternate 2 forwards;
+  overflow: hidden;
 }
 .preloader-container img {
   width: 260px;
@@ -183,9 +184,11 @@ strong {
   }
   75% {
     width: 260px;
+    transform: translateX(0);
   }
   100% {
     width: 260px;
+    transform: translateX(0);
   }
 }
 .container-fluid {

@@ -39,10 +39,10 @@
     .logo-container {
         width: 0;
         height: 40px;
-        // overflow: hidden;
         position: absolute;
         left: 0;
         animation: text 1.8s alternate 2 forwards;
+        overflow: hidden;
     }
 
     img {
@@ -91,9 +91,11 @@
     
     75% {
         width: calc(300px - 40px);
+        transform: translateX(0);
     }
 
     100% {
         width: calc(300px - 40px);
+        transform: translateX(0);
     }
 }
