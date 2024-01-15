@@ -7,7 +7,7 @@ $(document).ready(function() {
         hideOnClick: true,
         // trigger: 'click',
         placement: 'top-end',
-        // offset: [5, 10],
+        offset: [5, 10],
         maxWidth: 187,
         theme: 'white',
         animation: 'shift-away',
