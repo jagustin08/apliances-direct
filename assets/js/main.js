@@ -24,10 +24,5 @@ $(document).ready(function() {
         },
     });    
 
-    $('body').css({ overflow: 'hidden', });
-
-    setTimeout(function() {
-        $('.preloader-container').fadeOut('slow');
-        $('body').css({ overflow: 'auto', });
-    }, 5100);
+    
 });

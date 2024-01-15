@@ -1,99 +1,34 @@
 .preloader-container {
-    position: fixed;   
-    inset: 0;
+    background-color: var(--white);
     width: 100%;
     height: 100%;
-    background-color: var(--white);;
+    position: fixed;
+    inset: 0;
     z-index: 1080;
 
     .preloader {
+        background-color: yellow;
         width: min(calc(100% - 32px), 300px);
         height: 40px;
+        margin: auto;
         position: absolute;
         inset: 0;
-        margin: auto;
-
-        display: grid;
-        place-content: center;
-
-        @include media('md') {
-            transform: scale(1.2);
-        }
-
-        &::before {
-            content: '';
-            background: url('../images/ad_arrow_logo.svg') no-repeat center;
-            width: 39px;
-            height: 39px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            z-index: 1;
-
-            animation: arrow 1.8s alternate 2 forwards 1.5s; 
-
-        }
     }
 
     .logo-container {
-        width: 0;
-        height: 40px;
-        position: absolute;
-        left: 0;
-        animation: text 1.8s alternate 2 forwards  1.5s;
+        width: 50%;
+        height: 100%;
         overflow: hidden;
+        position: absolute;
+        right: 0;
     }
 
-    img {
+    #ad-text-logo {
+        background: url('../images/ad_text_logo.svg') no-repeat right center;
         width: 260px;
         height: 40px;
+
         position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
-
-@keyframes arrow {
-    0%, 25% {
-        transform: translate(-50%, -50%) scale(0);
-        left: 50%;
-    }
-
-    25%, 50% {
-        transform: translate(-50%, -50%) scale(1);
-        left: 50%;
-    }
-
-    50%, 75% {
-        transform: translate(0%, -50%) scale(1);
-        left: 0%;
-    }
-
-    75%, 100% {
-        transform: translate(0%, -50%) scale(1);
-        left: calc(100% - 39px);
-    }
-}
-
-@keyframes text {
-    0% {
-        width: 0;
-    }
-    25% {
-        width: 0;
-    }
-
-    50% {
-        width: 0;
-        transform: translateX(30px);
-    }
-    
-    75% {
-        width: 260px;
-    }
-
-    100% {
-        width: 260px;
+        right: 0;
     }
 }
