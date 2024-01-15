@@ -21,6 +21,18 @@
         overflow: hidden;
         position: absolute;
         right: 0;
+
+        animation: reveal 1s alternate infinite;
+    }
+
+    @keyframes reveal {
+        0%, 50% {
+            width: 50%;
+        }
+
+        100% {
+            width: 100%;
+        }
     }
 
     #ad-text-logo {

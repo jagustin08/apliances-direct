@@ -125,6 +125,15 @@ strong {
   overflow: hidden;
   position: absolute;
   right: 0;
+  animation: reveal 1s alternate infinite;
+}
+@keyframes reveal {
+  0%, 50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .preloader-container #ad-text-logo {
   background: url("../images/ad_text_logo.svg") no-repeat right center;
