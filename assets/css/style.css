@@ -112,7 +112,6 @@ strong {
   z-index: 1080;
 }
 .preloader-container .preloader {
-  background-color: yellow;
   width: min(100% - 32px, 300px);
   height: 40px;
   margin: auto;
@@ -124,9 +123,8 @@ strong {
   height: 100%;
   overflow: hidden;
   position: absolute;
-  background-color: blue;
   left: 0;
-  animation: reveal 1s alternate infinite;
+  animation: reveal 1.8s alternate infinite;
 }
 @keyframes reveal {
   0%, 50% {
@@ -150,8 +148,27 @@ strong {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   z-index: 1;
+  animation: panning 1.8s alternate infinite;
+}
+@keyframes panning {
+  0%, 25% {
+    transform: translate(-50%, -50%) scale(0);
+    left: 50%;
+  }
+  25%, 50% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+  }
+  50%, 75% {
+    transform: translate(0%, -50%) scale(1);
+    left: 0%;
+  }
+  75%, 100% {
+    transform: translate(0%, -50%) scale(1);
+    left: calc(100% - 39px);
+  }
 }
 
 .container-fluid {
