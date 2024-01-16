@@ -29,7 +29,10 @@ $(document).ready(function() {
         '-webkit-animation-play-state', 'running'
     );
 
+    $('body').css('overflow', 'hidden');
+
     $('.logo-container, #ad-arrow-logo').on('animationend', function() {
         $('.preloader-container').fadeOut('slow');
+        $('body').css('overflow', 'auto');
     });
 });
